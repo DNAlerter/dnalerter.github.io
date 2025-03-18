@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNAlert - Скачать</title>
+    <title>DNAlert - Download</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>DNAlert</h1>
-            <p>Оповещение о небезопасном подключении к интернету</p>
+            <p>Ваш лёгкий инструмент для уведомлений</p>
         </header>
         <main>
             <section class="download-section">
                 <h2>Скачать DNAlert</h2>
-                <a href="https://github.com/DNAlerter/DNAlerter/releases/download/release/1.0.zip" class="download-btn">Скачать сейчас</a>
+                <p>Получите последнюю версию DNAlert бесплатно. Просто, быстро и надёжно.</p>
+                <button class="download-btn" onclick="downloadFiles()">Скачать сейчас</button>
             </section>
         </main>
+        <footer>
+            <p>© 2025 DNAlert. Все права защищены.</p>
+        </footer>
     </div>
+
+    <script>
+        function downloadFiles() {
+            // Ссылки на два файла (замените на реальные пути)
+            const file1 = "https://github.com/DNAlerter/DNAlerter/releases/download/release/1.0.zip";
+            const file2 = "https://github.com/DNAlerter/DNAlerter/blob/main/Инструкция%20Пользователя.docx";
+
+            // Создаём временные ссылки для скачивания
+            const link1 = document.createElement("a");
+            link1.href = file1;
+            link1.download = ""; // Оставляет оригинальное имя файла
+            document.body.appendChild(link1);
+            link1.click();
+            document.body.removeChild(link1);
+
+            const link2 = document.createElement("a");
+            link2.href = file2;
+            link2.download = "";
+            document.body.appendChild(link2);
+            link2.click();
+            document.body.removeChild(link2);
+        }
+    </script>
 </body>
 </html>
