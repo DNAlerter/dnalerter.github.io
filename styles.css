@@ -1,4 +1,3 @@
-/* Сброс стилей */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +18,6 @@ body {
     text-align: center;
 }
 
-/* Хедер */
 header {
     margin-bottom: 40px;
 }
@@ -29,7 +27,7 @@ header h1 {
     color: #2c3e50;
 }
 
-/* Секция скачивания */
+
 .download-section {
     background-color: #fff;
     padding: 40px;
@@ -45,9 +43,9 @@ header h1 {
 
 /* Кнопки */
 .download-btn {
-    display: block; /* Делаем кнопки блочными, чтобы они шли друг под другом */
-    width: 200px; /* Фиксированная ширина для единообразия */
-    margin: 10px auto; /* Отступ сверху/снизу и центрирование по горизонтали */
+    display: block;
+    width: 200px;
+    margin: 10px auto;
     padding: 15px 30px;
     background-color: #3498db;
     color: #fff;
