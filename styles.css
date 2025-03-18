@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Сброс стилей */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 
-/* Header Styling */
+/* Хедер */
 header {
     margin-bottom: 40px;
 }
@@ -27,15 +27,9 @@ header {
 header h1 {
     font-size: 3rem;
     color: #2c3e50;
-    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-}
-
-/* Main Section Styling */
+/* Секция скачивания */
 .download-section {
     background-color: #fff;
     padding: 40px;
@@ -49,15 +43,11 @@ header p {
     margin-bottom: 20px;
 }
 
-.download-section p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-/* Download Button Styling */
+/* Кнопки */
 .download-btn {
-    display: inline-block;
+    display: block; /* Делаем кнопки блочными, чтобы они шли друг под другом */
+    width: 200px; /* Фиксированная ширина для единообразия */
+    margin: 10px auto; /* Отступ сверху/снизу и центрирование по горизонтали */
     padding: 15px 30px;
     background-color: #3498db;
     color: #fff;
@@ -69,14 +59,4 @@ header p {
 
 .download-btn:hover {
     background-color: #2980b9;
-}
-
-/* Footer Styling */
-footer {
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 0.9rem;
-    color: #7f8c8d;
 }
