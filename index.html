@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNAlert - Скачать</title>
-    <link rel="stylesheet" href="styles.css">
+    <ascss" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>DNAlert</h1>
-            <p>Ваш лёгкий инструмент для уведомлений</p>
         </header>
         <main>
             <section class="download-section">
                 <h2>Скачать DNAlert</h2>
-                <p>Получите последнюю версию DNAlert бесплатно. Просто, быстро и надёжно.</p>
                 <button class="download-btn" onclick="downloadFiles()">Скачать сейчас</button>
             </section>
         </main>
@@ -33,18 +31,20 @@
             // Скачивание первого файла
             const link1 = document.createElement("a");
             link1.href = file1;
-            link1.download = ""; // Оставляет оригинальное имя файла
+            link1.download = "";
             document.body.appendChild(link1);
             link1.click();
             document.body.removeChild(link1);
 
-            // Скачивание второго файла
-            const link2 = document.createElement("a");
-            link2.href = file2;
-            link2.download = "";
-            document.body.appendChild(link2);
-            link2.click();
-            document.body.removeChild(link2);
+            // Задержка перед скачиванием второго файла
+            setTimeout(() => {
+                const link2 = document.createElement("a");
+                link2.href = file2;
+                link2.download = "";
+                document.body.appendChild(link2);
+                link2.click();
+                document.body.removeChild(link2);
+            }, 500); // Задержка 500 мс
         }
     </script>
 </body>
